@@ -2,7 +2,7 @@ manifestVersion: 1
 id: prowlarr
 category: media
 name: Prowlarr
-version: "1.25.4.4818"
+version: "1.27.0.4852"
 tagline: Prowlarr is an indexer manager/proxy
 description: >-
   Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps.
@@ -37,7 +37,10 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  This update includes improved indexer sorting and updated translations, along with other small improvements and fixes.
+  This update includes several improvements and fixes:
+    - Updated indexer login and URL handling
+    - Improved translations across multiple languages
+    - Various bug fixes and performance enhancements
 
 
   Full release notes are found at https://github.com/Prowlarr/Prowlarr/releases.

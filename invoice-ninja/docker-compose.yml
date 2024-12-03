@@ -18,7 +18,7 @@ services:
       - app
 
   app:
-    image: invoiceninja/invoiceninja:5.10.48@sha256:3c88e988c5e60ff7131e12c49c450ed864214f87ab606a6c534105b4d5affcbd
+    image: invoiceninja/invoiceninja:5.10.58@sha256:b6b326bf4682c3759eb14d8af3a10be77c1902d33dd7fa4c2ae76b764ae92095
     # We're forced to run user/group 1500
     # More detail here: https://github.com/invoiceninja/dockerfiles/blob/ad3ffc227d63740330f761dad6e8c87768577847/alpine/5/Dockerfile#L70-L80
     user: "1500:1500"

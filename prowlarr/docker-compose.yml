@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*"
 
   server:
-    image: linuxserver/prowlarr:1.25.4@sha256:1e2fffd859ecd260e4aae4798cf5be75938cd602161d21b1d58122afb397c864
+    image: linuxserver/prowlarr:1.27.0@sha256:2ae64259bfca88972deec4cffa3750a454224283515854408e35af480f167cd7
     environment:
       - PUID=1000
       - PGID=1000

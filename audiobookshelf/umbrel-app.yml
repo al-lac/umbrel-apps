@@ -3,7 +3,7 @@ id: audiobookshelf
 name: Audiobookshelf
 tagline: Audiobook and podcast server
 category: media
-version: "2.16.2"
+version: "2.17.3"
 port: 13378
 description: >-
   Features:
@@ -61,23 +61,16 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  New features:
-    - Library setting to control when to mark items as finished (time remaining or percentage)
-    - User permission to allow users to create ereaders
-
-
   Fixed:
-    - Incorrect version shown as latest version when update is available
-    - Server crash when downloading files
-    - Incorrect time remaining for podcast episodes
-    - Server crash when streaming download 
+    - Server crash when deleting libraries or users
+    - Issues with podcast episode playback progress
+    - Share player settings functionality restored
 
 
   Changed:
-    - Improved performance with database migration for indexes
-    - Enhanced embed metadata tool functionality
-    - Improved localization for missing strings
-    - More strings translated in various languages including Croatian, Czech, Dutch, German, Polish, and Simplified Chinese
+    - Enhanced security with improved iframe restrictions
+    - Added audio filename and size details to podcast episode view
+    - Additional translations in Bengali, Croatian, French, German and Russian
 
 
   Full release notes can be found at https://github.com/advplyr/audiobookshelf/releases

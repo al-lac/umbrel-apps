@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: logto
+name: Logto
+tagline: 
+category: social
+version: "1.22.0"
+port: 8302
+description: >-
+  Logto is an identity and access management (IAM) solution that designed for modern apps and SaaS products.
+  
+  It provides a secure, scalable, and customizable authentication and authorization system for your applications.
+developer: Silverhand Inc.
+website: https://logto.io/
+submitter: al-lac
+submission: https://github.com/getumbrel/umbrel-apps/pull/1714
+repo: https://github.com/logto-io/logto
+support: https://github.com/logto-io/logto/issues
+gallery: []
+defaultUsername: ""
+defaultPassword: ""
+dependencies: []
+releaseNotes: ""
+path: ""

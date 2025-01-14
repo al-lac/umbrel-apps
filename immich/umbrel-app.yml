@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: immich
 category: files
 name: Immich
-version: "v1.123.0"
+version: "v1.124.2"
 tagline: High-performance photo and video backup solution
 description: >-
   An open-source and high-performance self-hosted backup solution for the videos and photos on your mobile device
@@ -48,12 +48,9 @@ releaseNotes: >-
   ⚠️ As usual, please check that your mobile app is compatible with this release of Immich.
 
 
-  This release includes several improvements and fixes:
-    - Added ability to merge faces sorted by similarity
-    - Added album view sort order in mobile app
-    - Fixed various issues with live photos playback
-    - Fixed upload panel and timeline navigation issues
-    - Fixed missing icons in web interface
+  This release includes bug fixes:
+    - Fixed an issue where various jobs weren't running on new external library assets
+    - Fixed multi-selection behavior in the folder view
 
   Full release notes are found at https://github.com/immich-app/immich/releases
 developer: Alex Tran

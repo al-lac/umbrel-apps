@@ -37,12 +37,10 @@ defaultPassword: ""
 dependencies: []
 releaseNotes: >-
   Highlights:
-    - Perplexity R1 1776: A version of the DeepSeek-R1 model that has been post trained to remove its refusal to respond to some sensitive topics.
-    - The OpenAI-compatible API will now return `tool_calls` if the model called a tool
-    - Performance on certain Intel Xeon processors should now be restored
-    - Fixed permission denied issues after installing Ollama on Linux
-    - The progress bar will no longer flicker when running `ollama pull`
-    - Fixed issue where running a model would fail on Linux if Ollama was installed in a path with UTF-8 characters
+    - New models: Phi-4-Mini, Granite-3.2-Vision, and Command R7B Arabic
+    - Customizable default context length
+    - Improved compatibility with NVIDIA Blackwell and development tools
+    - Fixed various installation and import issues on Linux
 
   Full release notes are available at https://github.com/ollama/ollama/releases
 path: ""

@@ -9,7 +9,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   gitlab:
-    image: zengxs/gitlab:17.9.1-ce.0@sha256:8087be9de83abf3f215694d1fc52d90a0c2a882589016a0b784598723e871325
+    image: gitlab/gitlab-ce:18.2.1-ce.0@sha256:3db5de3ce9fba4511345bb67731a1787e316f73029cdbd309ee947f860d9ff00
     restart: on-failure
     hostname: '${DEVICE_DOMAIN_NAME}:8929'
     ulimits:

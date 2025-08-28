@@ -2,7 +2,7 @@ manifestVersion: 1
 id: memos
 category: files
 name: Memos
-version: "0.24.1"
+version: "0.25.0"
 tagline: Easily capture and share your great thoughts
 description: >-
   A privacy-first, lightweight note-taking service.
@@ -18,15 +18,17 @@ description: >-
 
   - RESTful API for third-party services. Embrace the power of integration and unleash new possibilities with our RESTful API support.
 releaseNotes: >-
+  ⚠️ This version includes changes to the database and API. Please consider backing up your data before upgrading.
+
+
   New features and improvements:
-    - Polished homepage layout
-    - Introduced Masonry view (beta)
-    - Added support for blur processing of NSFW content with customizable tags
-    - Improved sublist indentation when adding new items
-    - Enhanced calendar month view with date picker
-    - Optimized initial load performance with lazy loading and code splitting
-    - Added loading spinner during file upload process
-    - Improved YouTube video thumbnail support in link previews
+    - Support user sessions with sliding window for improved security
+    - Moved webhook data storage to user settings (requires reconfiguration)
+    - Added variant colors and themes
+    - Highlight pinned memos
+    - Trim queryText and split by regex
+    - Use built-in max/min to simplify code
+    - Automatically add new table row in editor when pressing enter
 
 
   Full release notes are available at https://github.com/usememos/memos/releases

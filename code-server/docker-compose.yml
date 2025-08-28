@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
 
   server:
-    image: codercom/code-server:4.98.2@sha256:9ed588a05d4e81aa464e753a409bc3b2b93267323d1c3975fbddf6f9aef84c26
+    image: codercom/code-server:4.103.1@sha256:fc1d8a57dc5ca5fab67999416165d994ab78a7338b046c4b29f168033a6b7b38
     restart: on-failure
     user: "1000:1000"
     volumes:

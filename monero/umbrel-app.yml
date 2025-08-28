@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: monero
 category: finance
 name: Monero Node
-version: "0.18.3.4-1"
+version: "0.18.4.1"
 tagline: Run a monero node
 description: >-
   Run your monero node and independently store and validate every single Monero transaction with it.
@@ -23,7 +23,15 @@ gallery:
 path: ""
 defaultPassword: ""
 releaseNotes: >-
-  This update keeps monerod on version 0.18.3.4, but enables a ban list of suspected spy node IP addresses, as recommended by Monero Reesearch Lab.
+  This release contains bug fixes related to the wallet, the daemon, the RPC, and more.
 
 
-  Further details can be found at https://github.com/monero-project/meta/issues/1124
+
+  Some highlights of this release are:
+    - add new dynamic fees to ZMQ
+    - add set_subaddresss_lookahead endpoint
+    - improve logic when connecting to a peer
+    - fix edge case causing unresponsive wallet
+    - add safeguard for rare exception in TCP accept handler
+
+  Further details can be found at https://www.getmonero.org/2025/07/25/monero-0.18.4.1-released.html

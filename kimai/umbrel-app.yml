@@ -3,7 +3,7 @@ id: kimai
 name: Kimai
 tagline: Time tracking for project-driven teams
 category: files
-version: "2.31.0"
+version: "2.38.0"
 port: 8734
 description: >-
   🕒 Kimai is a self-hosted, open-source time-tracking application designed to capture and manage all your projects and tasks with minimal effort.
@@ -32,10 +32,10 @@ deterministicPassword: false
 dependencies: []
 releaseNotes: >-
   This release includes several improvements and enhancements:
-    - Added support for ordering timesheet listings by user, exported, and billable fields
-    - Improved export functionality with human-readable duration support
-    - Enhanced user interface with new dropdown actions and responsive screen classes
-    - Updated translations from the community
+    - New system configuration to enable beta feature "breaks"
+    - Improved support for time input separators
+    - Added daily totals in calendar week and day view
+
 
   For full release notes, visit https://github.com/kimai/kimai/releases
 path: ""

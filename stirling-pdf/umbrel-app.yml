@@ -3,7 +3,7 @@ id: stirling-pdf
 name: Stirling PDF
 tagline: Merge, split, rotate, and convert PDFs with ease
 category: files
-version: "0.44.2"
+version: "1.2.0"
 port: 27829
 description: >-
   Stirling PDF is a robust, locally hosted web-based PDF manipulation tool that offers a comprehensive set of features to address
@@ -54,11 +54,14 @@ gallery:
   - 2.jpg
   - 3.jpg
 releaseNotes: >-
-  Key improvements in this release:
-    - Enhanced PDF compression functionality
-    - Added undo/redo feature for signature writing
-    - Improved handling of ZIP files
-    - Various bug fixes and performance improvements
+  This update of Stirling PDF includes several enhancements and improvements:
+    - Fixed issues with pipeline, stamp, and SAML operations  
+    - Added PSD support for image-to-PDF conversion
+    - Improved Table of Contents with bookmark import/export
+    - Added urgency indicators for updates with security patches
+    - Added configurable max DPI for PDF-to-image conversion
+    - Various translation updates and minor UI improvements
+    - Optimized Dockerfiles and build processes
 
 
   Full release notes are found at https://github.com/Stirling-Tools/Stirling-PDF/releases

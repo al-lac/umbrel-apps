@@ -3,7 +3,7 @@ id: open-webui
 name: Open WebUI
 tagline: Chat with Ollama models like DeepSeek-R1 and LLama, or use an OpenAI API key
 category: ai
-version: "0.5.20"
+version: "0.6.22"
 port: 2876
 description: >-
   Open WebUI lets you chat with advanced AI models running locally on your own device or connect to online models using an API key.
@@ -37,28 +37,16 @@ defaultPassword: ""
 dependencies:
   - ollama
 releaseNotes: >-
-  ⚠️ If you encounter errors when chatting with your existing ollama models after this update, please clear your browser cache to resolve.
-  This is a known issue with ollama and open-webui that may occur after updating.
-  
-  
-  **Added**
-    - ⚡ Toggle Code Execution On/Off: You can now enable or disable code execution, providing more control over security, ensuring a safer and more customizable experience.
-    - 📊 Logit Bias Parameter Support: Fine-tune conversation dynamics by adjusting the Logit Bias parameter directly in chat settings, giving you more control over model responses.
-    - ⌨️ Customizable Enter Behavior: You can now configure Enter to send messages only when combined with Ctrl (Ctrl+Enter) via Settings > Interface, preventing accidental message sends.
-    - 📝 Collapsible Code Blocks: Easily collapse long code blocks to declutter your chat, making it easier to focus on important details.
-    - 🏷️ Tag Selector in Model Selector: Quickly find and categorize models with the new tag filtering system in the Model Selector, streamlining model discovery.
-    - 📈 Experimental Elasticsearch Vector DB Support: Now supports Elasticsearch as a vector database, offering more flexibility for data retrieval in Retrieval-Augmented Generation (RAG) workflows.
-    - ⚙️ General Reliability Enhancements: Various stability improvements across the WebUI, ensuring a smoother, more consistent experience.
-    - 🌍 Updated Translations: Refined multilingual support for better localization and accuracy across various languages.
-  
-  **Fixed**
-    - 📜 Pinyin Keyboard Enter Key Now Works Properly: Resolved an issue where the Enter key for Pinyin keyboards was not functioning as expected, ensuring seamless input for Chinese users.
-    - 🖼️ Web Manifest Loading Issue Fixed: Addressed inconsistencies with 'site.webmanifest', guaranteeing proper loading and representation of the app across different browsers and devices.
-    - 📦 Non-Root Container Issue Resolved: Fixed a critical issue where the UI failed to load correctly in non-root containers, ensuring reliable deployment in various environments.
-    - 🔄 "Stream" Hook Activation: Fixed an issue where the "Stream" hook only worked when globally enabled, ensuring reliable real-time filtering.
-    - 📧 LDAP Email Case Sensitivity: Resolved an issue where LDAP login failed due to email case sensitivity mismatches, improving authentication reliability.
-    - 💬 WebSocket Chat Event Registration: Fixed a bug preventing chat event listeners from being registered upon sign-in, ensuring real-time updates work properly.
+  Key highlights in this release include:
+    - OpenAI API '/v1' Endpoint Compatibility for better integration with tools expecting OpenAI's API structure
+    - Toggle for Guided Response Regeneration Menu in Interface settings
+    - General UI/UX Enhancements for improved visual consistency
+    - Localization & Internationalization Improvements including support for Kabyle language
+    - Fixed issues with OpenAI error message propagation, Pinecone insertion, s3vector functionality, and landing page option setting
+    - Resolved critical chat completion 'model_id' error after upgrading
+    - Improved audit log user information logging and OpenTelemetry configuration consistency
+    - Fixed reply input content display and refined translations for multiple languages
+
 
   Full release notes can be found at https://github.com/open-webui/open-webui/releases
 path: ""
-

@@ -6,7 +6,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: deluan/navidrome:0.55.0@sha256:2a1d37af7901d8dec5a7c7147600469f39b6e6137f857ead61124b3b709f0953
+    image: deluan/navidrome:0.58.0@sha256:2ae037d464de9f802d047165a13b1c9dc2bdbb14920a317ae4aef1233adc0a3c
     restart: on-failure
     environment:
       - PUID=1000

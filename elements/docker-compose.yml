@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
 
   node:
-    image: ghcr.io/vulpemventures/elements:23.2.4@sha256:f4bb9af7f2278e6b6a7a6160f5f17eec28e85a2bf47ebbdc96d0e64caa582d16
+    image: ghcr.io/vulpemventures/elements:23.3.0@sha256:290adece84700db7522998cd5031839c3fb57cf549e8d23fd59c5196188a0db0
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m

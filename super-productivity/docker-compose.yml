@@ -7,5 +7,5 @@ services:
       APP_PORT: 80
 
   web:
-    image: johannesjo/super-productivity:v10.2.3@sha256:d8df5fc62c04de4e17384150439a20be2265b500084e134b420436703894ad64
+    image: johannesjo/super-productivity:v14.3.3@sha256:8e7000de7ac1320022966fc0f9cdee8246a5f33eb6906d22a840c01e4b2dea22
     restart: on-failure

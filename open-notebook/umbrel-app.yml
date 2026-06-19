@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: open-notebook
+name: Open Notebook
+tagline: Private NotebookLM-style research assistant
+category: ai
+version: "1.10.0"
+port: 8502
+description: >-
+  Open Notebook is an open-source, privacy-focused alternative to Google NotebookLM for organizing research,
+  documents, notes, audio, video, web pages, and other learning materials. It supports more than 18 AI providers,
+  including OpenAI, Anthropic, Google, Ollama, LM Studio, OpenRouter, and OpenAI-compatible endpoints, so you can
+  choose the models and costs that fit your workflow.
+
+
+  Use it to create notebooks, search your content with full-text and vector search, chat with context from your sources,
+  transform material into notes and summaries, and generate multi-speaker podcasts from your research. Your notebooks,
+  uploaded content, and stored provider credentials stay on your Umbrel.
+developer: Open Notebook
+website: https://www.open-notebook.ai
+repo: https://github.com/lfnovo/open-notebook
+support: https://github.com/lfnovo/open-notebook/issues
+gallery: []
+releaseNotes: ""
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+deterministicPassword: false
+submitter: al-lac
+submission: https://github.com/getumbrel/umbrel-apps/pull/5770

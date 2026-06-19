@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: open-notebook_open-notebook_1
+      APP_PORT: 8502
+
+  open-notebook:
+    image: lfnovo/open_notebook:1.10.0@sha256:c8112fbd4b8fee7f2a20d3bdbea24e7d72267acfc990b803fd0ff4de30899b57
+    restart: on-failure
+    environment:
+      OPEN_NOTEBOOK_ENCRYPTION_KEY: ${APP_SEED}
+      SURREAL_URL: ws://open-notebook_surrealdb_1:8000/rpc
+      SURREAL_USER: root
+      SURREAL_PASSWORD: open-notebook-surreal
+      SURREAL_NAMESPACE: open_notebook
+      SURREAL_DATABASE: open_notebook
+      API_URL: http://${DEVICE_DOMAIN_NAME}:8503
+    ports:
+      - 8503:5055
+    volumes:
+      - ${APP_DATA_DIR}/data/notebook:/app/data
+    depends_on:
+      surrealdb:
+        condition: service_started
+
+  surrealdb:
+    image: surrealdb/surrealdb:v2@sha256:d653f6c8a89e81f865ee31cd2f587c50f50ace922175e04150b1e385d2f86011
+    user: "1000:1000"
+    restart: on-failure
+    command: start --log info --user root --pass open-notebook-surreal rocksdb:/mydata/mydatabase.db
+    environment:
+      SURREAL_EXPERIMENTAL_GRAPHQL: "true"
+    volumes:
+      - ${APP_DATA_DIR}/data/surrealdb:/mydata

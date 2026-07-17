@@ -20,7 +20,7 @@ services:
       INFLUXDB_HTTP_AUTH_ENABLED: "true"
 
   chronograf:
-    image: chronograf:1.9.4@sha256:928cd75952b597df3666886197cfdcd24a4017289422c0e12ec937c56f0131f4
+    image: chronograf:1.9.4@sha256:96d8a3f65a4ff7c623d8ce4ee4182ade225e9d3defcb76fc14607b7ffb82f66f
     environment:
       INFLUXDB_URL: "http://influxdb_influxdb_1:8086"
       INFLUXDB_USERNAME: admin

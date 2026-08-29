@@ -10,7 +10,7 @@ services:
       PROXY_AUTH_WHITELIST: "/webhook-test/*,/webhook/*"
 
   server:
-    image: n8nio/n8n:1.107.4@sha256:a49bc867def7800e99ec175dee46b62282961a6460cfb422b3adec3e53073d63
+    image: n8nio/n8n:1.123.75@sha256:7dc59e962588d16348bdddd6fde56b1ef7997abbd1b7212c3103893b4a1fe40a
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/home/node/.n8n

@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: 'false'
 
   broker:
-    image: docker.io/library/redis:7@sha256:d6ecc832969a4827645a083da38345327b3447772fe907e7d4311c79b4e3a06e
+    image: docker.io/library/redis:7@sha256:44960b3100c48159a66d28c18b0588c193492e25f7551d60e51dd464fc3eca5b
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/redisdata:/data
